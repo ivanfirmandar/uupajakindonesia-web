@@ -22,9 +22,6 @@ body{
     opacity: 70%;
     z-index: -100;
 }
-.nav-bar{
-    /* padding: 15px; */
-}
 .nav-bar a{
     text-decoration: none;
     padding: 2vw;
@@ -93,9 +90,6 @@ body{
 .judulDeskripsi p{
     margin: 0vw 10vw;
     text-align: justify;
-}
-.nav-bar2{
-    /* padding: 15px; */
 }
 .nav-bar2 a{
     text-decoration: none;
