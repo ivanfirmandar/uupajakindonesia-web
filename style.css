@@ -24,7 +24,9 @@ body{
 }
 .nav-bar a{
     text-decoration: none;
-    padding: 2vw;
+    padding: 5px;
+    margin: 5px;
+    font-size: 2.5vh;
     color: white;
 }
 .active{
@@ -35,7 +37,7 @@ body{
     /* margin-top: 30vh; */
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 160px auto;
+    grid-template-rows: 30vh auto;
     grid-template-areas: 
     "judul"
     "download-button";
@@ -55,18 +57,19 @@ body{
 .judulUU h1{
     margin: 0px;
     text-transform: uppercase;
-    font-size: 35px;
+    font-size: 6vh;
     font-weight: 600;
     color: white;
 }
 .downloadButton{
     grid-area: download-button;
     text-align: center;
-    height: 20px;
+    font-size: 3vh;
 }
 .downloadButton button{
-    width: 150px;
-    height: 40px;
+    width: 33vh;
+    height: 8vh;
+    font-size: 3vh;
     border-radius: 75px;
     border: none;
     color: white;
@@ -93,7 +96,9 @@ body{
 }
 .nav-bar2 a{
     text-decoration: none;
-    padding: 2vw;
+    padding: 5px;
+    margin: 5px;
+    font-size: 2.5vh;
     color: rgba(47,77,131,1);
 }
 #carouselExampleControls{
@@ -130,3 +135,12 @@ body{
 /* .contact2{
     background-color: white;
 } */
+.copyright p{
+    color: white;
+    font-size: 2.5vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-10vh);
+    bottom: 10px;
+    margin: 0px;
+}
