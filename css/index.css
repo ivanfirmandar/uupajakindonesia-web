@@ -1,0 +1,265 @@
+body { 
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "nav article"
+    "footer footer";
+    grid-template-rows: 80px 1fr 70px;  
+    grid-template-columns: 30% 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+}  
+header, footer, article {
+    padding: 1.2em;
+    background-color: white;
+}
+#pageHeader {
+    grid-area: header;
+}
+#pageFooter {
+    grid-area: footer;
+}
+#mainArticle { 
+    grid-area: article;      
+}
+#mainNav {
+    grid-area: nav; 
+}
+#siteAds { 
+    grid-area: ads; 
+} 
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+    body { 
+        grid-template-areas: 
+        "header"
+        "article"
+        "nav"
+        "footer";
+        grid-template-rows: 80px 1fr 70px 1fr 70px;  
+        grid-template-columns: 1fr;
+    }
+}
+a:focus{
+    text-decoration: none;
+}
+.header{
+    background-color:white;
+    height: 40vh;
+    position: fixed;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 35vh 6vh;
+    grid-template-areas: 
+    "decoration"
+    "inter";
+    z-index: 200;
+    box-shadow: 0px 0px 20px 0px;
+    /* border-radius: 0px 0px 100px 0px; */
+}
+#header-grad{
+    position: absolute;
+    top: -2px;
+    width: 50vh;
+}
+.inter-button{
+    grid-area: inter;
+    display: grid;
+    grid-template-areas: "button1 button2";
+    grid-template-columns: 50vw 50vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    /* height: 4vh; */
+    width: 100vw;
+    background-color: white;
+}
+.inter-button .uubutton:first-child{
+    grid-area: button1;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    height: 6vh;
+    font-size: 2vh;
+    line-height: 6vh;
+    color: #2F4D83;
+    text-align: center;
+    border-bottom: solid #78E5CD;
+    /* border-width: ; */
+}
+.inter-button .uubutton:last-child{
+    grid-area: button2 ;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    display: none;
+    color: #2F4D83;
+    text-align: center;
+}
+.decoration{
+    grid-area: decoration;
+}
+.navbar-kup{
+    background-color: black;
+}
+.title-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-weight: 900;
+    top: 0px;
+    right: 0px;
+}
+.title-container h3{
+    position: absolute;
+    text-align: center;
+    text-align: right;
+    color: #2F4D83;
+    /* width: 40vw; */
+    top: 12vh;
+    right: 5vw;
+    /* margin-bottom: 10px; */
+    font-weight: 700;
+}
+.title-container p{
+    position: absolute;
+    right: 5vw;
+    top: 9vh;
+    width: 100px;
+    color: #178DB0;
+    font-size: 2vh;
+    font-weight: 600;
+    text-align: right;
+}
+#copyright{
+    text-align: center;
+}
+.router-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "tombol";
+    /* grid-auto-flow: column; */
+    bottom: 0px;
+}
+.router-container .card{
+    margin: 10px 5px 0px 5px;
+    border-radius: 10px;
+}
+.router-container .card:first-child{
+    margin: 20px 5px 0px 5px;
+    border-radius: 10px;
+}
+.router-container .card:last-child{
+    margin: 10px 5px 10px 5px;
+    border-radius: 10px;
+}
+.router-container .card .card-body{
+    display: grid;
+    grid-template-areas: 
+    "logo judul"
+    "logo keterangan";
+    color: #2F4D83;
+    padding: 10px;
+}
+.router-container .card h2{
+    margin-top: 10px;
+    grid-area: judul;
+    font-size: 20px;
+    font-weight: 600;
+}
+.router-container .card p{
+    grid-area: keterangan;
+    color: black;
+    font-size: 12px;
+    text-align: justify;
+    padding-right: 5px;
+}
+.router-container .card .logo{
+    grid-area: logo;
+    margin: 10px 15px 10px 0px;
+    border-radius: 20px;
+    width: 120px;
+    height: 120px;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, rgba(120,229,205,1) 0%, rgba(23,141,176,1) 100%);
+}
+.router-container .card .logo h1{
+    color: white;
+    text-align: center;
+    line-height: 120px;
+    font-weight: 900;
+    font-size: 30px;
+}
+.router{
+    margin: 5px;
+    /* margin-left: 40px; */
+}
+.button-manual{
+    height: 60px;
+    width: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 12px;
+    border-radius: 5px;
+    background-color: #61C7B9;
+    background: linear-gradient(0deg, rgba(171,220,255,1) 0%, rgba(3,150,255,1) 100%);
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+}
+.contributor{
+    display: flex;
+    margin-top: 100px;
+}
+.contributor-button{
+    position: absolute;
+    background-color: white;
+    color:rgb(26,59,80);
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    width: 40vw;
+    border-radius: 0px 0px 20px 20px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 2vh;
+    margin: 0px auto;
+    top: 0px;
+    left: 20px;
+    box-shadow: 0px 10px 20px;
+}
+@media only screen and (max-width:350px){
+    .title-container{
+        top: 5vh
+    }
+}
+#nav {
+    overflow: hidden;
+}
+#nav a {
+    float: left;
+    text-align: center;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+#nav a:hover {
+    background-color: lightblue;
+    color: black;
+    border-radius: 25em;
+}
+.click {
+    color: #FFFFFF;
+    background: linear-gradient(45deg, rgba(120,229,205,1) 0%, rgba(23,141,176,1) 100%);
+    border-radius: 25em;
+}
+#mainNav {
+    padding: 1em;
+}
+.dropdown-menu .contact{
+    color: white;
+}
+.dropdown-menu{
+    background-color:  #4b4b4b;

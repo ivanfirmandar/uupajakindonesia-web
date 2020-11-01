@@ -1,0 +1,380 @@
+body{
+    transition: ease 1s;
+    background-color:  #2F4D83;
+}
+.btn-link:focus{
+    text-decoration: none;
+}
+.body{
+    padding-left: 400px;
+    transition: ease 1s;
+    background-color: #2F4D83;
+}
+.full{
+    padding-left: 0px;
+}
+p, li{
+    text-align: justify;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.pasal-nama{
+    color: black;
+    display: flex;
+    align-items: stretch;
+    /* height: 200px; */
+}
+.pasal-nama svg{
+    position: absolute;
+    right: 20px;
+}
+.note-container{
+    position: fixed;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "note"
+    "addNote";
+    padding: 20px;
+    height: 80%;
+    width: 100%;
+    background-color: transparent;
+    z-index: 9000;
+}
+.note-container .note{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 50px;
+    grid-template-areas: 
+    "a"
+    "b";
+    grid-area: note;
+    /* margin-top: 10px; */
+    height: 500px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: white;
+    border: solid gray 0,5px;
+}
+.note-container .addNote{
+    background-color: #2F4D83;
+    display: flex;
+    grid-area: b;
+}
+.note-container .addNote #namaPasalNote{
+    line-height: 50px ;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.note-container .addNote #saveNoteButton{
+    line-height: 50px ;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.note-container .addNote button{
+    border: none;
+    width: 100px;
+    height: 100%;
+    margin: 0px;
+    background-color:  #2F4D83 ;
+    color: white;
+}
+#judulUU{
+    width: 400px;
+    position: absolute;
+    line-height: 12px;
+    top: 23px;
+    left: 50px;
+}
+#noteText{
+    padding: 10px;
+}
+#refresh-button{
+    color: white;
+    position: fixed;
+    right: 20px;
+    top: 22px;
+}
+#refresh-button svg{
+    height: 20px;
+    width: 20px;
+}
+.search-highlight{  
+    display: contents;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:  lime;
+}
+.toolbar{
+    position: fixed;
+    z-index: 300;
+    background-color: whitesmoke;
+    height: 70px;
+    opacity: 50%;
+    width: 70px;
+    transition: ease 0.5s;
+    border-radius: 100%;
+    bottom: 10px;
+    box-shadow: 0px 0px 50px -20px;
+    right: 10px;
+}
+.toolbar2{
+    opacity: 0%;
+}
+.find{
+    right: 100px;
+    opacity: 100%;
+}
+.note{
+    right: 190px;
+    opacity: 100%;
+}
+.toolbar .toolbar-icon{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+}
+.toolbar-main{
+    z-index: 9000;
+}
+.card-header{
+    height: 40px;
+    line-height: 40px;
+    padding: 0px;
+}
+.bab-header {
+    text-align: center;
+    padding: 15px 0px;
+    background-color: #0A0D16;
+    color: black;
+}
+.navbar-kup{
+    position: relative;
+    background: linear-gradient(90deg, rgba(47,77,131,1) 0%, rgba(23,141,176,1) 100%);
+    height: 60px;
+    color: white;
+    line-height: 60px;
+    font-weight: bolder;
+}
+.modal-toolbar{
+    position: fixed;
+    bottom: 90px;
+    transform-origin: bottom right;
+    padding: 20px;
+    right: 50%;
+    transform: translateX(175px);
+    z-index: 1000;
+    height: 150px;
+    transition: ease 1s;
+    width: 350px;
+    background-color: #2F4D83;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.modal-toolbar-hide{
+    transform-origin: bottom right;
+    width: 0px;
+    height: 0px;
+    padding: 0px;
+}
+.modal-toolbar label{
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.modal-toolbar input{
+    border: none;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    border-radius: 20px;
+}
+.modal-toolbar button{
+    border: none;
+    height: 40px;
+    position: relative;
+    width: 90px;
+    border-radius: 20px;
+    margin-top: 10px;
+    left: 50%;
+    transform: translateX(-45px);
+}
+.back-button{
+    position: absolute;
+    top: 10px;
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    color: white;
+}
+.bab-title{
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(47,77,131,1) 0%, rgba(23,141,176,1) 100%);
+    color: white;
+    border-radius: 0px;
+}
+.bab-title p {
+    margin:  0px;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: #2f2f2f;
+    color: white;
+    height: 60px;
+    top: 0px;
+}
+
+.keterangan {
+    color: tomato;
+    font-weight: bold;
+    display: contents;
+}
+
+#pasal-wrapper {
+    text-align: justify;
+}
+
+.modal-keterangan {
+    position: fixed;
+    width: 100%;
+    margin-top: 60px;
+    z-index: 200;
+    box-shadow: 2px 2px 50px;
+}
+
+.hide {
+    display: none;
+}
+
+#bab-wrapper {
+    margin-top: 60px;
+}
+#keteranganAyat{
+    max-height: 250px;
+    overflow: scroll;
+}
+#keteranganAyat .card-body{
+    margin: 0px 10px;
+}
+#keteranganAyat button{
+    margin-bottom: 20px;
+    border: none;
+    width: 100%;
+}
+.subsub {
+    margin-left: -40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "angka isi"
+    "angka isi2";
+    flex-direction: row;
+}
+.subsub p {
+    grid-area: isi;
+    margin-left: 3.5px;
+    margin-bottom: 5px;
+}
+.subsub ol{
+    grid-area: isi2;
+}
+.huruf {
+    grid-area: sub;
+}
+.angka {
+    grid-area: angka;
+}
+.custom-counter {
+    list-style: none ;
+    counter-reset: item ;
+}
+.custom-counter li {
+    margin-bottom: 5px ;
+    margin-left: -40px;
+    display: grid;
+    grid-template-columns: 30px auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "auto auto"
+    ". sub"
+}
+.custom-counter li:before {
+    counter-increment: item ;
+    content: "(" counter(item) ")" ;
+    margin-right: 0rem ;
+}
+.custom-counter li ol {
+    counter-reset: def ;
+}
+.custom-counter li ol li {
+    margin-left: -30px;
+    margin-bottom: 0px;
+    display: grid ;
+    grid-template-columns: 30px auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "auto auto"
+    ". angka"
+}
+.custom-counter li ol li:before {
+    counter-increment: def ;
+    content: counter(def, lower-alpha) ".";
+    margin-right: 0.2rem ;
+}
+.custom-counter li ol p {
+    margin-left: -40px;
+    margin-bottom: 0px;
+}
+.custom-counter .subsub ol {
+    counter-reset: alfa ;
+}
+.custom-counter .subsub ol li {
+    margin-left: -30px;
+    margin-bottom: 0px;
+    display: grid ;
+    grid-template-columns: 30px auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "auto auto"
+    ". angka"
+}
+.custom-counter .subsub ol li:before {
+    counter-increment: alfa ;
+    content: counter(alfa, lower-alpha) ".";
+    margin-right: 0.2rem ;
+}
+.custom-counter li ol li ol {
+    counter-reset: unit ;
+}
+.custom-counter li ol li ol li {
+    margin-left: -30px;
+    margin-bottom: 0px;
+    display: grid ;
+    grid-template-columns: 30px auto;
+    grid-template-rows: auto;
+}
+.custom-counter li ol li ol li:before {
+    counter-increment: unit ;
+    content: counter(unit, decimal) "." ;
+    margin-right: 0.2rem ;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th {
+    border: 1px solid;
+    text-align: center;
+}
+th, td {
+    height: 25px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
