@@ -44,26 +44,15 @@ body{
     "download-button";
     /* justify-content: stretch; */
 }
-.judulUU{
-    grid-area: judul;
-    text-align: center;
-     font-family: 'Source Sans Pro', sans-serif; 
-}
-.judulUU h2{
-    margin: 0px;
-     font-weight: 300;
-     font-size: 25px;
-     color:  rgba(171,220,255,1);;
-}
-.judulUU h1{
-    margin: 0px;
-    text-transform: uppercase;
-    font-size: 6vh;
-    font-weight: 600;
-    color: white;
+.subnav{
+    background-color: transparent;
 }
 .downloadButton{
-    grid-area: download-button;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-100px);
+    top: 60vh;
+    width: 200px;
     text-align: center;
     font-size: 3vh;
 }
@@ -85,6 +74,7 @@ body{
     margin: 0px;
     margin-top: 40px;
 }
+
 .judulDeskripsi{
     /* grid-area: deskripsi; */
     text-align: center;
@@ -94,6 +84,28 @@ body{
 .judulDeskripsi p{
     margin: 0vw 10vw;
     text-align: justify;
+}
+.judulUU{
+    position: absolute;
+    top: 35vh;
+    left: 50%;
+    transform: translateX(-100px);
+    width: 200px;
+    text-align: center;
+     font-family: 'Source Sans Pro', sans-serif; 
+}
+.judulUU h2{
+    margin: 0px;
+     font-weight: 300;
+     font-size: 25px;
+     color:  rgba(171,220,255,1);;
+}
+.judulUU h1{
+    margin: 0px;
+    text-transform: uppercase;
+    font-size: 6vh;
+    font-weight: 600;
+    color: white;
 }
 .nav-bar2 a{
     text-decoration: none;

@@ -9,9 +9,12 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="style.css">
+
     <link rel="icon" href="img/icon.png">
 </head>
+
 <body class="bosy">
     <div class="for">
     </div>
@@ -32,17 +35,23 @@
         </div>
     </div>
     <header id="pageHeader">
-        <nav id="nav">
-            <a class="active" href="index.html">Halaman Utama</a>
-            <a href="deskripsi.html">Deskripsi</a>
-            <a href="pages/kup/index.html">Aplikasi Web</a>
-            <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Hubungi Kami
-        </a>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a href="http://wa.me/+6281231269604" class="dropdown-item contact">Ivan Firmanda</a>
-            <a class="dropdown-item contact" href="http://wa.me/+6285236360189">Angga Dwi Bimantara</a>
-        </div>
+        <nav id="nav" style="background-color:transparent;">
+            <div class="hamburger"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-justify"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                </svg></div>
+            <div class="subnav" style="background-color:transparent;">
+                <a href="index.html" class="click naves">Halaman Utama</a>
+                <a href="deskripsi.html" class="naves">Deskripsi</a>
+                <a class=" naves" href="./pages/kup/index.html">Aplikasi Web</a>
+                <a href="developer.html" class="naves">Tentang Kami</a>
+            </div>
+            <div class="dropdown show">
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a href="http://wa.me/+6281231269604" class="dropdown-item contact">Ivan Firmanda</a>
+                    <a class="dropdown-item contact" href="http://wa.me/+6285236360189">Angga Dwi Bimantara</a>
+                </div>
         </nav>
     </header>
     <div class="content cool">
@@ -55,9 +64,9 @@
             <p>Versi 1.1</p>
         </a>
     </div>
-    <div class="copyright">
+    <!-- <div class="copyright">
         <p>©2020 IMJ PKN STAN</p>
-    </div>
+    </div> -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -67,6 +76,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
         crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
     <script>
         const nav = document.getElementsByClassName("linkN");
         for (let index = 0; index < nav.length; index++) {
@@ -74,7 +84,6 @@
                 nav[index].classList.add("active")
             })
         }
-
     </script>
 </body>
 

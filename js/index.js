@@ -27,3 +27,8 @@ function onDeviceReady() {
     console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
     document.getElementById('deviceready').classList.add('ready');
 }
+
+let hamburger = document.getElementsByClassName('hamburger')[0];
+hamburger.addEventListener("click", () => {
+    document.getElementsByClassName("subnav")[0].classList.toggle("showd");
+})

@@ -289,7 +289,7 @@ a:focus{
 .subnav{
     display: flex;
     position: relative;
-    background-color: #2F4D83;
+    background-color: transparent;
     height: auto;
     padding: 10px;
     box-sizing: border-box;
